@@ -12,8 +12,8 @@ class ProjectController extends Controller
     {
 
         //recupero dati dal server attraverso istanza classe model
-        //insieme alle variabili e ne mostro 5 per volta
-        $projectsData = Project::with(["project", "type", "tecnologies"])->paginate(5);
+        //insieme le variabili e ne mostro 5 per volta  $projectsData = Project::with(["project", "type", "tecnologies"])->paginate(5);
+        $projectsData = Project::with("type","tecnologies")->paginate(5);
        
         return response()->json($projectsData);
         //rimando un json dei dati recuperati
