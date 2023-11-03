@@ -18,4 +18,15 @@ class ProjectController extends Controller
         return response()->json($projectsData);
         //rimando un json dei dati recuperati
     }
+    
+    
+    public function show($slug) {
+        $projectData = Project::where("slug", $slug)
+            // recupera le informazioni delle relazioni
+            ->with(["type", "tecnologies"])
+            // ritorna il primo risultato
+            ->first();
+
+        return response()->json($projectData);
+    }
 }

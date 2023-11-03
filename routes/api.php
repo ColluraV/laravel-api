@@ -22,3 +22,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 //creo una rotta per recuperare i files recuperati
 Route::get("projects", [ProjectController::class, "index"]);
+Route::get("project/{slug}", [ProjectController::class, "show"]);

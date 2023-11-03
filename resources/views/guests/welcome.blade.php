@@ -50,7 +50,7 @@
 
                     <h1 style="font-size:2rem">Benvenuto Viaggiatore</h1>
                     
-                    <a class="btn btn-light" href="/projects"> Progetti</a>
+                    <a class="btn btn-light" href="http://localhost:5174/"> Progetti</a>
 
                 </div>
 

@@ -33,7 +33,8 @@ Route::middleware(['auth', 'verified'])
 
         //projects reader
         Route::get('/projects', [ProjectController::class, "index"])->name("projects.index");
-        Route::get('/projects/{slug}]', [ProjectController::class, "show"])->name("projects.show");
+        // Route::get('/projects/{slug}]', [ProjectController::class, "show"])->name("projects.show");
+        Route::get('/projects/{project}]', [ProjectController::class, "show"])->name("projects.show");
 
         //project creater
         Route::post('/projects', [ProjectController::class, "store"])->name("projects.store");

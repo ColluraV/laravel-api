@@ -25,11 +25,11 @@ class ProjectController extends Controller
                 e vengono associati i valori degli oggetti del db*/
     }
 
-    public function show($id)
+    public function show($slug)
     {
         /*seleziono ilo singolo elemento nel db tramite il suo id
          o restituisco errore 404*/
-        $project = Project::findOrFail($id);
+        $project = Project::where("slug",$slug)->firstOrFail();
         dump($project);
         return view("admin.projects.show", compact("project"));
     }
