@@ -48,9 +48,9 @@
                     
 
 
-                    <h1 style="font-size:2rem">Benvenuto Viaggiatore</h1>
+                    <h1 style="font-size:2rem">Benvenuto Viaggiatore api</h1>
                     
-                    <a class="btn btn-light" href="http://localhost:5174/"> Progetti</a>
+                    <a class="btn btn-light" href="/projects"> Progetti</a>
 
                 </div>
 

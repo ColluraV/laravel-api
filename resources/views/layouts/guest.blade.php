@@ -19,6 +19,7 @@
             <div>
                 <a href="/">
                     <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+                    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum inventore et vero voluptate aperiam? Hic eaque in error rerum quo pariatur recusandae, fugit quidem, sint voluptatibus, ducimus assumenda praesentium laboriosam?</h1>
                 </a>
             </div>
 
